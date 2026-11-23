@@ -13,7 +13,13 @@ import config
 import db
 import texts
 import ui
-from handlers import (admin_cmds, commands, excel_upload, history_view, profiles, session, wizard)
+import admin_cmds
+import commands
+import excel_upload
+import history_view
+import profiles
+import session
+import wizard
 from monitor import Monitor
 from queue_worker import QueueWorker
 from tg_client import TgManager
