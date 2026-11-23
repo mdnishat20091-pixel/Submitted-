@@ -1,4 +1,6 @@
-"""টেলিগ্রাম Job Manager বট — প্রবেশ বিন্দু।  চালান:  python main.py"""
+
+"""টেলিগ্রাম Job Manager বট — প্রবেশ বিন্দু। চালান: python main.py"""
+
 import asyncio
 import logging
 import sys
@@ -13,11 +15,10 @@ import config
 import db
 import texts
 import ui
-import admin_cmds
-import commands
-import excel_upload
-import history_view
-import profiles
+import admin_cmds, commands, excel_upload, history_view, profiles, session, wizard
+from monitor import Monitor
+from queue_worker import QueueWorker
+from tg_client import TgManager
 import session
 import wizard
 from monitor import Monitor
